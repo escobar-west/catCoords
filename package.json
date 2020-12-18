@@ -1,8 +1,13 @@
 {
   "name": "catCoords",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "./lib/index.js",
+  "browser": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "ethers": "^5.0.24"
   },
