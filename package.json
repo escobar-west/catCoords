@@ -6,7 +6,7 @@
   "browser": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
-    "lib"
+    "lib/**/*"
   ],
   "dependencies": {
     "ethers": "^5.0.24"
