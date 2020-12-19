@@ -1,2 +1,4 @@
 node_modules/
 lib/
+0x_ganache_snapshot_catmap/
+*swp

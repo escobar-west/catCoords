@@ -44,10 +44,10 @@ export class ContractIFace {
 
     async setIdCoords(id: number, lat: number, lon: number, signer?: Signer): Promise<TransactionResponse> {
         if (lat < -900000000 || lat > 900000000) {
-            throw `latitude of ${lat} is outside allowed range [-900000000, 900000000]`;
+            throw new Error(`latitude of ${lat} is outside allowed range [-900000000, 900000000]`);
         }
         if (lon < -1800000000 || lon > 1800000000) {
-            throw `longitude of ${lon} is outside allowed range [-1800000000, 1800000000]`;
+            throw new Error(`longitude of ${lon} is outside allowed range [-1800000000, 1800000000]`);
         }
         try {
             if (signer === undefined) {
