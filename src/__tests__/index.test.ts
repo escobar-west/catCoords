@@ -7,6 +7,7 @@ const ganacheCfg = {
     "db_path": `${__dirname}/../../0x_ganache_snapshot_catmap`,
     "locked": false
 }
+
 const provider = ganache.provider(ganacheCfg);
 const catApp = new ContractIFace(provider);
 
